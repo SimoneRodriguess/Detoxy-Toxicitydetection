@@ -172,3 +172,43 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# === DeToxy project-specific ignores ===
+
+# Large audio and media files
+*.wav
+*.mp3
+*.flac
+
+# Model checkpoints and logs
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.joblib
+*.t7
+*.onnx
+*.log
+
+# Hugging Face downloaded models
+**/facebook/
+**/bert-base*/
+**/wav2vec2*/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Output or temporary folders
+outputs/
+runs/
+logs/
+temp/
+tmp/
+
+# Dataset artifacts
+Audio Files - Required/
+Wav Files/
+clips/
+audio_clips/
+__output/
+transcripts_generated/
